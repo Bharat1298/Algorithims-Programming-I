@@ -1,0 +1,49 @@
+// Java_Strings_Lab1.java
+
+import java.util.*;
+
+/*
+ * CPS 150
+ * Algorithms & Programming I
+ * 
+ * Lab Project: Java Strings
+ * 
+ * Name:
+ * 
+ */
+
+public class Java_Strings_Lab1
+{
+  public static void main(String[] args)
+  {
+    String inputString = "The quick brown fox jumps over the lazy dog";
+    String outputString = new String(); // empty String; can also use String outputString = "";
+    
+    /*
+        Using only the String charAt method and concatenation (the + operator with Strings),
+           complete the following sequence of commands that will extract characters
+           from inputString to make outputString = "Tempus fugit".
+        Remember that the charAt method is given a String index and produces the
+           character at that index.  The index of the first character in any String
+           is equal to 0, while the last index is equal to 1 less than the length of
+           (number of characters in) the String.
+        Also remember that the spaces in the String count as characters (the ' ' character).
+     */
+    
+    outputString = outputString + inputString.charAt(0); // outputString is now "T"
+    outputString = outputString + inputString.charAt(2); // outputString is now  "Te"
+    outputString = outputString + inputString.charAt(22); // outputString is now "Tem"
+    outputString = outputString + inputString.charAt(23); // outputString is now "Temp"
+    outputString = outputString + inputString.charAt(21); // outputString is now "Tempu"
+    outputString = outputString + inputString.charAt(24); // outputString is now "Tempus"
+    outputString = outputString + inputString.charAt(3); // outputString is now  "Tempus "
+    outputString = outputString + inputString.charAt(16); // outputString is now "Tempus f"
+    outputString = outputString + inputString.charAt(21); // outputString is now "Tempus fu"
+    outputString = outputString + inputString.charAt(42); // outputString is now "Tempus fug"
+    outputString = outputString + inputString.charAt(6); // outputString is now  "Tempus fugi"
+    outputString = outputString + inputString.charAt(31); // outputString is now "Tempus fugit"
+    // add the rest of the statements to build the outputString
+    
+    System.out.println(outputString); // output the final outputString;
+  } // end main
+} // end class Java_Strings_Lab1
